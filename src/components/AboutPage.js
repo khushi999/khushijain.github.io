@@ -25,8 +25,8 @@ const float = keyframes`
 `
 const Spaceman = styled.div`
 position: absolute;
-top: 10%;
-right: 5%;
+top: 17%;
+right: 8%;
 width: 20vw;
 animation: ${float} 4s ease infinite;
 img{
@@ -45,7 +45,7 @@ const Main =  styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.1rem + 1vw);
  backdrop-filter: blur(4px);
   
   position: absolute;
@@ -72,9 +72,13 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        Hi there! 👋 I'm Khushi Jain, a passionate 3rd-year Computer Science student at York University, diving deep into the world of data engineering and software development. 
+        Hello! Thanks for visiting! 😊
 <br /> <br/>
-When I'm not coding, you can find me working on cool projects.🚀 
+I'm Khushi Jain, a dedicated and passionate Bachelor of Science Honors student in Computer Science at York University's Lassonde School of Engineering.  
+<br/> <br/>
+My academic journey is complemented by robust internships where I've leveraged data science and engineering to drive decisions and streamline processes. Notably, I've developed AI-powered solutions, such as an AI agent for diagnosing chest diseases from X-rays, and optimized ETL pipelines for improved data warehousing. 
+<br/> <br/>
+When I'm not immersed in coding or data analysis, you'll find me expressing myself through dance, exploring diverse cuisines, or diving into the world of travel. Each step in my journey is an opportunity to learn and grow, both professionally and personally. Let's connect and explore how we can create a positive impact together! ⭐
 <br/> <br/>
 “Keep shining, keep grinding, and let your positivity light the way to success.” 🌟
         </Main>

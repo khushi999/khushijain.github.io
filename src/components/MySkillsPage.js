@@ -99,7 +99,7 @@ const MySkillsPage = () => {
 <Description>
 <strong>Tools</strong>
 <p>
-    Git, Figma, Postman, Robot Framework, Docker, Kubernetes, Selenium
+    Git, Figma, Postman, Robot Framework, Docker, Kubernetes, Selenium, Snowflake, Airflow, TensorFlow,Tableau, Databricks
 </p>
 </Description>
 
@@ -107,7 +107,7 @@ const MySkillsPage = () => {
 <strong>Framewoks</strong>
 
 <p>
-React, MySQL, MongoDB, Neo4j, AWS, Next.js, Tailwind CSS, Dialogflow, Node.js, Supabase, Angular, Figma
+React, MySQL, MongoDB, Neo4j, AWS, Next.js, Tailwind CSS, Dialogflow, Node.js, Supabase, Angular, Figma, Azure
 </p>
 
 </Description>
@@ -117,7 +117,7 @@ React, MySQL, MongoDB, Neo4j, AWS, Next.js, Tailwind CSS, Dialogflow, Node.js, S
 <Title>
     <Develope width={40} height={40} /> Coding Languages
 </Title>
-<Description>
+<Description style={{ fontSize:'1.4rem'}}>
 <strong>Languages I'm familiar with</strong>
 <li>
 Python
@@ -143,7 +143,15 @@ Java
 <li>
 TypeScript
 </li>
-
+<li>
+VBA
+</li>
+<li>
+BASH
+</li>
+<li>
+SAS
+</li>
 
 </Description>
 
