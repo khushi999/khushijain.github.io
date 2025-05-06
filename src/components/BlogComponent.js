@@ -1,96 +1,99 @@
-import { motion } from "framer-motion";
 import React from "react";
-// import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
+import TDLogoBuilding from "../assets/Images/building.jpg";
+import Myfloor from "../assets/Images/16floor.jpg";
+import InnovationChallenge  from "../assets/Images/challenge.jpg";
+import BankLogo from "../assets/Images/banklogo.png";
 
-const Box = styled(motion.a)`
-  width: calc(10rem + 15vw);
-  text-decoration: none;
-  height: 20rem;
-  padding: 1rem;
+const BlogWrapper = styled.div`
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
   color: ${(props) => props.theme.text};
-  border: 2px solid ${(props) => props.theme.text};
-  backdrop-filter: blur(2px);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-
-  display: flex;
-  flex-direction: column;
-  z-index: 5;
-
-  &:hover {
-    color: ${(props) => props.theme.body};
-    background-color: ${(props) => props.theme.text};
-    transition: all 0.3s ease;
-  }
-`;
-
-const Image = styled.div`
-  background-image: ${(props) => `url(${props.img})`};
-  width: 100%;
-  height: 60%;
-  background-size: cover;
-  border: 1px solid transparent;
-  background-position: center center;
-
-  ${Box}:hover & {
-    border: 1px solid ${(props) => props.theme.body};
-  }
-`;
-const Title = styled.h3`
-  color: inherit;
-  padding: 0.5rem 0;
-  padding-top: 1rem;
   font-family: "Karla", sans-serif;
-  font-weight: 700;
-  border-bottom: 1px solid ${(props) => props.theme.text};
-
-  ${Box}:hover & {
-    border-bottom: 1px solid ${(props) => props.theme.body};
-  }
-`;
-const HashTags = styled.div`
-  padding: 0.5rem 0;
-`;
-const Tag = styled.span`
-  padding-right: 0.5rem;
-`;
-const Date = styled.span`
-  padding: 0.5rem 0;
+  line-height: 1.8;
 `;
 
-const Container = styled(motion.div)``;
+const Title = styled.h1`
+  font-size: 6rem;
+  font-weight: 950;
+  margin-bottom: 1.5rem;
+  text-align: center;
+`;
 
-// Framer motion configuration
-const Item = {
-  hidden: {
-    scale: 0,
-  },
-  show: {
-    scale: 1,
-    transition: {
-      type: "spring",
-      duration: 0.5,
-    },
-  },
-};
+const Date = styled.p`
+  font-size: 1.1rem;
+  opacity: 0.6;
+  text-align: center;
+  margin-bottom: 2rem;
+`;
 
-const BlogComponent = (props) => {
-  const { name, tags, date, imgSrc, link } = props.blog;
+const Image = styled.img`
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin: 2rem 0;
+  border-radius: 10px;
+`;
+
+const Section = styled.section`
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+`;
+
+
+const InternshipBlog = () => {
   return (
-    <Container variants={Item}>
-      <Box target="_blank" href={`${link}`}>
-        <Image img={imgSrc} />
-        <Title>{name}</Title>
-        <HashTags>
-          {tags.map((t, id) => {
-            return <Tag key={id}>#{t}</Tag>;
-          })}
-        </HashTags>
-        <Date>{date}</Date>
-      </Box>
-    </Container>
+    <BlogWrapper>
+      <Title>Data Science Intern -</Title>
+      <img src={BankLogo} alt="TD Bank Logo" style={{ width: "50%", margin: "1rem auto", display: "block"}} />
+      <Date>January – April 2025</Date>
+
+      <Section>
+        <p>
+        During Summer 2025, I had the opportunity to intern as a Data Science Intern at TD Bank Group, where I worked with the Collections Analytics team. It was a transformative experience that blended technical skill-building with real-world business impact. I explored tools like Databricks, Tableau, and SQL to extract meaningful insights from financial datasets and contributed to the decision-making processes behind account recovery and risk analytics.
+
+        </p>
+      </Section>
+
+      <Image src={TDLogoBuilding} alt="My desk at TD Bank" />
+
+      <Section>
+        <p>
+        One of the most memorable highlights was my participation in TD's Innovation Challenge. Collaborating with fellow interns across departments, we brainstormed a solution to enhance customer engagement during the collections process. The challenge pushed us to think creatively, pitch our ideas to senior leadership, and understand how innovation happens within a corporate environment.
+
+        </p>
+      </Section>
+
+      <Image src={Myfloor} alt="My Team at TD Bank" />
+
+      <Section>
+        <p>
+          A major project I worked on during my internship was centered around Debt Sales Analysis. I performed exploratory and descriptive analysis on delinquent accounts, identifying trends in payment behavior, recovery likelihood, and write-off patterns. This involved working with complex datasets across different product categories—like prime, non-prime, and recreational loans. I also contributed to automating the Monthly Operating Report (MOR) dashboards using SQL and Tableau, helping the team save time and improve reporting accuracy.
+
+
+        </p>
+      </Section>
+
+      <Image src={InnovationChallenge} alt="Innovation Challenge" />
+
+      <Section>
+        <p>
+        Beyond the technical work, this experience taught me how to communicate insights effectively, collaborate within large teams, and navigate ambiguity in data. I’m grateful for the mentorship and support I received, and I’m walking away with a stronger foundation in data science, along with a deeper understanding of how large financial institutions use data to drive decisions.
+
+
+        </p>
+      </Section>
+
+      <Section>
+        <p>
+          Overall, the internship strengthened both my technical foundation and
+          my confidence as an aspiring data scientist. I’m grateful to my
+          mentors and teammates who made it such a great learning experience.
+        </p>
+      </Section>
+    </BlogWrapper>
   );
 };
 
-export default BlogComponent;
+export default InternshipBlog;
