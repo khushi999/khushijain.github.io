@@ -1,17 +1,21 @@
 {
   "files": {
     "main.css": "/khushijain.github.io/static/css/main.58462fbc.css",
-    "main.js": "/khushijain.github.io/static/js/main.a52f9c99.js",
+    "main.js": "/khushijain.github.io/static/js/main.14d3062e.js",
     "static/media/u-said-it-v13-1167.mp3": "/khushijain.github.io/static/media/u-said-it-v13-1167.becd66496be9c81ddf9d.mp3",
+    "static/media/16floor.jpg": "/khushijain.github.io/static/media/16floor.2edbb7af7a3be586bb9e.jpg",
     "static/media/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg": "/khushijain.github.io/static/media/patrick-tomasso-Oaqk7qqNh_c-unsplash.8ca90014fb6ce5980110.jpg",
-    "static/media/profile-img.png": "/khushijain.github.io/static/media/profile-img.0879f82a52617322a3e6.png",
+    "static/media/profile-img.png": "/khushijain.github.io/static/media/profile-img.db7c57ca7e0bf620a95a.png",
+    "static/media/building.jpg": "/khushijain.github.io/static/media/building.3cb7dbf8e587e932ce5a.jpg",
     "static/media/spaceman.png": "/khushijain.github.io/static/media/spaceman.ae86f9539643cf6c7171.png",
+    "static/media/challenge.jpg": "/khushijain.github.io/static/media/challenge.3bf8cea9afbae628858e.jpg",
+    "static/media/banklogo.png": "/khushijain.github.io/static/media/banklogo.e7a96cd320d3a8fbff3e.png",
     "index.html": "/khushijain.github.io/index.html",
     "main.58462fbc.css.map": "/khushijain.github.io/static/css/main.58462fbc.css.map",
-    "main.a52f9c99.js.map": "/khushijain.github.io/static/js/main.a52f9c99.js.map"
+    "main.14d3062e.js.map": "/khushijain.github.io/static/js/main.14d3062e.js.map"
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.a52f9c99.js"
+    "static/js/main.14d3062e.js"
   ]
 }
